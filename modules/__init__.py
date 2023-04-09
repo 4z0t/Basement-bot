@@ -1,1 +1,1 @@
-from .Balaboba import *
+import modules.Balaboba
