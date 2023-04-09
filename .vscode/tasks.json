@@ -3,7 +3,7 @@
   "tasks": [
     {
       "label": "SETUP_KEYS",
-      "command": "./ENV_KEYS.bat",
+      "command": "call .env.bat",
       "type": "shell"
     }
   ]

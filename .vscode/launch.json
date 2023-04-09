@@ -3,7 +3,7 @@
     {
       "name": "Production",
       "type": "python",
-      "preLaunchTask": "SETUP_KEYS",
+    //  "preLaunchTask": "SETUP_KEYS",
       "request": "launch",
       "program": "main.py",
       "justMyCode": true
@@ -11,7 +11,7 @@
     {
       "name": "Development",
       "type": "python",
-      "preLaunchTask": "SETUP_KEYS",
+      //"preLaunchTask": "SETUP_KEYS",
       "request": "launch",
       "program": "main.py",
       "justMyCode": true

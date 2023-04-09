@@ -1,4 +1,0 @@
-@ECHO OFF
-
-SET DISCORD_BOT_APP_ID="app id"
-SET DISCORD_BOT_KEY="public key"
