@@ -1,5 +1,5 @@
 import os
-import DiscordBot
+import modules.DiscordBot as DiscordBot
 
 def main(token):
     DiscordBot.start(token)
