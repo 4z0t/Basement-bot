@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SETUP_KEYS",
+      "command": "./ENV_KEYS.bat",
+      "type": "shell"
+    }
+  ]
+}
