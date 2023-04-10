@@ -2,6 +2,7 @@ from nomic.gpt4all import GPT4All
 import asyncio
 import signal
 import platform
+from .Utils import to_thread
 
 # if platform.system() == "Windows":
 #     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
@@ -89,7 +90,7 @@ class AsyncGPT4All(GPT4All):
         self.bot.terminate()
         await self.bot.wait()
 
-
+@to_thread
 async def generate(prompt):
     async with AsyncGPT4All() as model:
         return await model.prompt(prompt)
