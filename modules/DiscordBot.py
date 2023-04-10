@@ -30,6 +30,4 @@ def start(token: str):
     intents.message_content = True
     client = DiscordBot(intents=intents)
 
-    print(client.on_message)
-
     client.run(token)

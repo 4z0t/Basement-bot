@@ -21,7 +21,7 @@ async def balaboba_text(text):
     async with aiohttp.ClientSession(headers=HEADERS) as session:
         async with session.post(API_URL, data=params) as resp:
             response: dict = await resp.json(content_type=None)
-            return response.get("text", "")
+            return text + response.get("text", "")
 
 
 async def main():
