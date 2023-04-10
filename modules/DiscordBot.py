@@ -25,10 +25,11 @@ class DiscordBot(discord.Client):
                 "There is chat gpt already running, wait!"
             )
         self.is_gpt_running = True
-        text = await generate(rest_text)
+        async with message.channel.typing():
+            text = await generate(rest_text)
         self.is_gpt_running = False
 
-        await message.channel.send(text)
+        await message.channel.send(text[14:-6:])
 
     async def on_message(self, message: discord.Message):
         if message.author == self.user:
