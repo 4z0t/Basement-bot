@@ -90,7 +90,7 @@ class AsyncGPT4All(GPT4All):
         self.bot.terminate()
         await self.bot.wait()
 
-@to_thread
+#@to_thread
 async def generate(prompt):
     async with AsyncGPT4All() as model:
         return await model.prompt(prompt)
